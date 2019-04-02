@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(124, 75, 75);
+}
+#content{
+    border-style: dashed;
+}
+.jumbotron {
+    height: 100;
+    width: 100;
+}
+
+h1 {
+    color: greenyellow;
+    text-align: left;
+    
+    
+}
+p{
+    text-align: center;
+    color: greenyellow;
+}
+h1 {
+    font-weight: bold;
+    padding-left: 250px
+}
+
+.game {
+    color: greenyellow;
+    background-color: rgba(246, 42, 42, 0.794);
+}
+

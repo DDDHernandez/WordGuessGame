@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game of Thrones Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-danger">
+        <div class="container-fluid">
+            <h1 class="display-4">Game of Thrones</h1>
+            <h1 class="display-4">Hangman</h1>
+            <p class="lead">Hopefully you know your game of Thrones Characters, because 
+                this is a Hangman game based off those characters. </p>
+                <p class="lead">Good Luck! </p>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid game" id="Scoreboard">
+        <div class="card-header">
+            <h3 class="card-title">Scoreboard</h3> 
+        </div>
+        <div class="card-body">  
+            <h3>Wins:</h3>
+            <span id="winCounter"></span>
+            <h3>Losses:</h3>
+            <span id="lossCounter"></span>  
+            <h3>Guesses:</h3>
+            <span id="guesses"></span>
+        </div>
+        </div>
+        <br>
+        <br>
+    <div class="container-fluid game">
+            <div class="card-header">
+                <h3 class="card-title"> Word to guess</h3>
+
+                </div>
+            <div class="card-body">
+                <h2 id="current-word">_ _ _ _ _ _</h2>
+            </div>
+    </div>
+    <Br>
+    <div class="container-fluid game">
+            <div class="card-header">
+                <h3 class="card-title">Already Guessed Letters</h3>
+
+                </div>
+            <div class="card-body">
+                <br>
+                <h2 id="wrongGuesses"></h2>
+            </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
