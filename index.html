@@ -15,52 +15,73 @@
 </head>
 
 <body>
+    <nav class="navbar fixed-top navbar-light">
+        <span class="navbar-brand mb-0 h1 left">Game of Thrones</span>
+        <form class="form-inline" id="menu">
+            <div class="nav-item list-inline-item">
+                Wins:
+                <span id="winCounter"></span>
+            </div>
+            <div class="nav-item list-inline-item">
+                Losses:
+                <span id="lossCounter"></span>
+            </div>
+            <div class="nav-item list-inline-item">
+                Guesses:
+                <span id="guesses"></span>
+            </div>
+            </ul>
+    </nav>
 
-    <div class="jumbotron jumbotron-fluid bg-danger">
+    <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
             <h1 class="display-4">Game of Thrones</h1>
             <h1 class="display-4">Hangman</h1>
-            <p class="lead">Hopefully you know your game of Thrones Characters, because 
-                this is a Hangman game based off those characters. </p>
-                <p class="lead">Good Luck! </p>
+
         </div>
     </div>
     <br>
-
+    <div class="container-fluid" id="Scoreboard">
+        <p class="lead">Hopefully you know your game of Thrones Characters, because
+            this is a Hangman game based off those characters. </p>
+        <p class="lead">Good Luck! </p>
+    </div>
+    <br>
     <div class="container-fluid game" id="Scoreboard">
         <div class="card-header">
-            <h3 class="card-title">Scoreboard</h3> 
+            <h3 class="card-title">Scoreboard</h3>
         </div>
-        <div class="card-body">  
+        <div class="card-body">
             <h3>Wins:</h3>
             <span id="winCounter"></span>
             <h3>Losses:</h3>
-            <span id="lossCounter"></span>  
+            <span id="lossCounter"></span>
             <h3>Guesses:</h3>
             <span id="guesses"></span>
         </div>
-        </div>
-        <br>
-        <br>
+    </div>
+    <br>
+    <br>
     <div class="container-fluid game">
-            <div class="card-header">
-                <h3 class="card-title"> Word to guess</h3>
+        <div class="card-header">
+            <h3 class="card-title"> Word to guess</h3>
 
-                </div>
-            <div class="card-body">
-                <h2 id="current-word">_ _ _ _ _ _</h2>
-            </div>
+        </div>
+        <div class="card-body">
+            <h2 id="current-word">_ _ _ _ _ _</h2>
+        </div>
     </div>
     <Br>
+    <Br>
     <div class="container-fluid game">
-            <div class="card-header">
-                <h3 class="card-title">Already Guessed Letters</h3>
+        <div class="card-header">
+            <h3 class="card-title">Already Guessed Letters</h3>
 
-                </div>
-            <div class="card-body">
-                <br>
-                <h2 id="wrongGuesses"></h2>
-            </div>
+        </div>
+        <div class="card-body">
+            <br>
+            <h2 id="wrongGuesses"></h2>
+        </div>
     </div>
     <br>
     <br>
